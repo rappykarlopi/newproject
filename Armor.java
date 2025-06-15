@@ -1,27 +1,13 @@
-public class Armor {
-    
+public abstract class Armor {
+
     private int defense;
     private int speedPenalty;
 
-    public Armor(int defense, int speedPenalty) {
-        this.defense = defense;
-        this.speedPenalty = speedPenalty;
-    }
+    public abstract int getDefense();
 
-    public int getDefense() {
-        return defense;
-    }
+    public abstract void setDefense(int defense);
 
-    public void setDefense(int defense) {
-        this.defense = defense;
-    }
+    public abstract int getSpeedPenalty();
 
-    public int getSpeedPenalty() {
-        return speedPenalty;
-    }
-
-    public void setSpeedPenalty(int speedPenalty) {
-        this.speedPenalty = speedPenalty;
-    }
-
+    public abstract void setSpeedPenalty(int speedPenalty);
 }
